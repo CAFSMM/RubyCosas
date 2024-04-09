@@ -5,9 +5,9 @@ print 'ingrese peso: ' ; peso = gets.chomp.to_f
 print 'ingrese radio: ' ; radio = gets.chomp.to_f
 print 'ingrese densidad: ' ; densidad = gets.chomp.to_f
 print 'ingrese gusanos: ' ; gusanos = gets.chomp.to_i
-print 'ingrese color <',colores,'>\n>> ' ; color = gets.chomp.downcase
+print 'ingrese color <',colores,'>> ' ; color = gets.chomp.downcase
 
-if color.include? colores then
+if colores.include? color then
 	if gusanos.eql? 0 then
 		if color.eql? 'verde' && densidad<=15 then cosecha = true end
 		if color.eql? 'rojo' && radio<=13 && densidad>=10 then cosecha = true end
